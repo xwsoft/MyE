@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/alert_dialog_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="@drawable/button_style"
+                android:text="Cancel"
+                android:textColor="@color/btnTextColor" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_cancel"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:background="@drawable/button_style"
+                android:text="Done"
+                android:textColor="@color/btnTextColor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_heating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heating"
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_cooling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txt_heating"
+                android:layout_alignBottom="@+id/txt_heating"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/txt_heating"
+                android:text="Cooling"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="top|center_horizontal"
+            android:orientation="vertical" >
+
+            <com.mye.gmobile.view.wheel.WheelView
+                android:id="@+id/whell_set_temp_heat"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content" />
+
+            <com.mye.gmobile.view.wheel.WheelView
+                android:id="@+id/whell_set_temp_cool"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/whell_set_temp_heat"
+                android:layout_alignBottom="@+id/whell_set_temp_heat"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/whell_set_temp_heat" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

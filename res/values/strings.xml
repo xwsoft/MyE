@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyE</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_upgrader">UpgraderActivity</string>
+    <string name="category_home">House</string>
+    <string name="category_channel">T-stat</string>
+    <string name="category_search">Smart-up</string>
+    <string name="category_account">Scene</string>
+    <string name="category_more">Settings</string>
+</resources>

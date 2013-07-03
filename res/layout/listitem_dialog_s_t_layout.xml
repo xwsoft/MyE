@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dialog_switch_t_listitem_bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/l_tid"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@color/dialog_switch_t_listitem_row_color"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/thermostat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="thermostat"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thermostat_id"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/l_space_item1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#5E6985"
+        android:orientation="vertical" >
+    </RelativeLayout>
+
+</LinearLayout>

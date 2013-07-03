@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="timeoutConnection">10000</string>
+	<string name="timeoutSocket">12000</string>
+</resources>

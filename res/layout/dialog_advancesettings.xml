@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdvanceSettingsActivity" >
+
+    <LinearLayout
+        android:id="@+id/l_advance_settings"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp" >
+
+        <RelativeLayout style="@style/input_title_Layout" >
+
+            <TextView
+                style="@style/input_title"
+                android:text="Server Address:" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/input_title_Layout" >
+
+            <EditText
+                android:id="@+id/txt_serveraddress"
+                style="@style/input"
+                android:background="@drawable/input_style"
+                android:maxLength="50"
+                android:saveEnabled="true" >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/input_title_Layout" >
+
+            <TextView
+                style="@style/input_title"
+                android:text="Server port:" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/input_title_Layout" >
+
+            <EditText
+                android:id="@+id/txt_serverport"
+                style="@style/input"
+                android:background="@drawable/input_style"
+                android:inputType="number"
+                android:maxLength="50" >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/input_title_Layout" >
+
+            <TextView
+                style="@style/input_title"
+                android:text="Server username:" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/input_title_Layout" >
+
+            <EditText
+                android:id="@+id/txt_serveruser"
+                style="@style/input"
+                android:background="@drawable/input_style"
+                android:maxLength="50" >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/input_title_Layout" >
+
+            <TextView
+                style="@style/input_title"
+                android:text="Server password:" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/input_title_Layout" >
+
+            <EditText
+                android:id="@+id/txt_serverpwd"
+                style="@style/input"
+                android:background="@drawable/input_style"
+                android:maxLength="50" >
+            </EditText>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/button_style"
+                android:text="  Save  "
+                android:textColor="@color/btnTextColor" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/button_style"
+                android:text="  Cancel  "
+                android:textColor="@color/btnTextColor" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

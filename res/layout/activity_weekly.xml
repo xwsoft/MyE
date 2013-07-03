@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/l_btn_weekly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btn_mon"
+            style="@style/btn_weekly_style"
+            android:text="Mon" />
+
+        <Button
+            android:id="@+id/btn_tue"
+            style="@style/btn_weekly_style"
+            android:text="Tue" />
+
+        <Button
+            android:id="@+id/btn_wed"
+            style="@style/btn_weekly_style"
+            android:text="Web" />
+
+        <Button
+            android:id="@+id/btn_thu"
+            style="@style/btn_weekly_style"
+            android:text="Thu" />
+
+        <Button
+            android:id="@+id/btn_fir"
+            style="@style/btn_weekly_style"
+            android:text="Fir" />
+
+        <Button
+            android:id="@+id/btn_sat"
+            style="@style/btn_weekly_style"
+            android:text="Sat" />
+
+        <Button
+            android:id="@+id/btn_sun"
+            style="@style/btn_weekly_style"
+            android:text="Sun" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_weekly_canvas"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_apply"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_apply"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/apply2x" />
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/reset_disabled2x" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btn_weekly_mode_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/add_btn" />
+
+        <HorizontalScrollView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" >
+
+            <LinearLayout
+                android:id="@+id/l_mode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/btn_weekly_mode_edit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/mode_edit" />
+    </LinearLayout>
+
+</LinearLayout>

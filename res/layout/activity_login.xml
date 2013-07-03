@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/login_bg"
+    tools:context=".LoginActivity" >
+
+
+
+    <LinearLayout
+        android:id="@+id/l_login"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="35.0dip"
+        android:layout_marginRight="35.0dip"
+        android:layout_marginTop="28.0dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout style="@style/input_title_Layout" >
+
+            <TextView
+                style="@style/input_title"
+                android:text="Username:" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/input_title_Layout" >
+
+            <EditText
+                android:id="@+id/txt_username"
+                style="@style/input"
+                android:background="@drawable/input_style"
+                android:hint=""
+                android:maxLength="50"
+                android:saveEnabled="true" >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/input_title_Layout">
+
+            <TextView
+                style="@style/input_title"
+                android:text="Password:" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/input_title_Layout" >
+
+            <EditText
+                android:id="@+id/txt_password"
+                style="@style/input"
+                android:background="@drawable/input_style"
+                android:inputType="textPassword"
+                android:maxLength="50"
+                android:saveEnabled="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/chk_remember"
+                style="@style/CheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:checked="false"
+                android:text="Remember me." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style"
+                android:text="  Login  "
+                android:textColor="@color/btnTextColor" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

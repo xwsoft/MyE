@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/title_bg"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical|center_horizontal"
+            android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_vacation_add"
+            android:layout_width="33dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/switch_t"
+            android:focusable="false"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_switch_t"
+            android:layout_width="33dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/switch_t"
+            android:focusable="false" />
+
+        <ImageView
+            android:id="@+id/img_refresh"
+            android:layout_width="33dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/refresh"
+            android:focusable="false"
+            android:gravity="right|center_vertical" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="20.0dip"
+        android:background="@drawable/viewpager_title_bg">
+
+        <TextView
+            android:id="@+id/text1"
+            style="@style/viewpager_title_txt"
+            android:text="Dashboard" />
+
+        <TextView
+            android:id="@+id/text2"
+            style="@style/viewpager_title_txt"
+            android:text="Next24" />
+
+        <TextView
+            android:id="@+id/text3"
+            style="@style/viewpager_title_txt"
+            android:text="Weekly" />
+
+        <TextView
+            android:id="@+id/text4"
+            style="@style/viewpager_title_txt"
+            android:text="Vacation" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cursor"
+        android:layout_width="fill_parent"
+        android:layout_height="1.8dp"
+        android:scaleType="matrix"
+        android:src="@drawable/viewpager_title_sel" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="#000000"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>
